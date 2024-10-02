@@ -1,7 +1,7 @@
 # homebridge-pioneer-avr [![npm version](https://badge.fury.io/js/homebridge-pioneer-avr.svg)](https://badge.fury.io/js/homebridge-pioneer-avr)
 
 homebridge-pioneer-avr is a plugin made for [homebridge](https://github.com/nfarina/homebridge),
-which declare your Pioneer AVR as a TV in homekit (iOS 12.2 nedded).
+which declare your Pioneer AVR as a TV in homekit (iOS 12.2 needed).
 It should work with Pioneer AVRs supported by the iControl AV5 App. It works well with my VSX-922.
 
 ## Features
@@ -20,7 +20,7 @@ Declare your AVR as a homekit TV :
 
 1. Install the homebridge framework using `npm install -g homebridge`
 2. Install **homebridge-pioneer-avr** using `npm install -g homebridge-pioneer-avr`
-3. Update your configuration file. See `sample-config.json` in this repository for a sample. 
+3. Update your configuration file. See `sample-config.json` in this repository for a sample.
 
 ## Accessory configuration example
 
@@ -49,6 +49,24 @@ https://github.com/TG908/homebridge-vsx
 
 ## Release Notes
 
+### v0.8.2
+
+- Enhanced performance and responsiveness of the Pioneer AVR receiver.
+- Maintained a single Telnet session for faster command execution.
+- Ensured compatibility with the latest Homebridge and Node.js versions.
+- Node.js 20 LTS: No issues; Node.js 22: Deprecated warning, but fully functional.
+- General improvements for better reliability.
+
+Update recommended for optimal performance.
+
+### v0.8.1
+
+* Modify telnet-avr to comply with RS232 specs
+
+### v0.8.0
+
+* Completely rewrite communication with AVR
+
 ### v0.7.0
 
 * Use AVR's web interface if available
@@ -72,4 +90,3 @@ https://github.com/TG908/homebridge-vsx
 * Select active input in home app
 * Select inputs to show in the input list
 * Control volume through the command in control center with iPhone +/- buttons
-
